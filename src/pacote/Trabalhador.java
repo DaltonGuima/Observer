@@ -1,17 +1,8 @@
 package pacote;
 
-public class Trabalhador implements Assinante {
-    private String nome;
+public class Trabalhador extends Pessoa implements Assinante {
 
-
-    public String getNome() {
-        return nome;
-    }
-      
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public void lerNoticia(String noticia, String nomeJornal){
-        System.out.println("\nAssinante: "+ nome + "\nRevista: "+ nomeJornal +"\nNotícia: " + noticia);
+    public void lerNoticia(String noticia, String nomeJornal) {
+        System.out.println("\nAssinante: " + getNome() + "\nRevista: " + nomeJornal + "\nNotícia: " + noticia);
     }
 }
